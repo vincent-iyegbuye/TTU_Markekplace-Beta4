@@ -17,3 +17,49 @@ body {
     color: var(--text);
     background: white;
 }
+
+/* Navigation */
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 4%;
+    min-height: 76px;
+    border-bottom: 1px solid var(--border);
+}
+
+header nav a {
+    text-decoration: none;
+    color: #26262b;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+header nav a:first-child {
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: auto;
+}
+
+header nav input {
+    background: var(--light);
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    width: 100%;
+    max-width: 430px;
+    min-width: 150px;
+}
+
+header nav a[aria-current="page"] {
+    color: var(--ttu-red);
+    font-weight: 600;
+}
+
+header nav a:last-child {
+    background: var(--ttu-red);
+    color: white;
+    padding: 13px 20px;
+    border-radius: 9px;
+}
