@@ -360,3 +360,37 @@ main {
     }
 }
 
+
+
+/* Footer */
+
+.site-footer {
+    margin-top: 60px;
+    padding: 24px 4%;
+    border-top: 1px solid var(--border);
+    background: var(--light);
+    color: var(--muted);
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+
+/* Accessibility */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+    outline: 3px solid var(--ttu-red);
+    outline-offset: 3px;
+}
+
