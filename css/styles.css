@@ -63,3 +63,133 @@ header nav a:last-child {
     padding: 13px 20px;
     border-radius: 9px;
 }
+
+/* Main content */
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 26px 4%;
+}
+
+/* Hero section */
+
+.hero {
+    background: var(--dark);
+    color: white;
+    border-radius: 18px;
+    padding: 28px 48px;
+    min-height: 238px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.08;
+    max-width: 380px;
+    margin: 0 0 12px;
+}
+
+.hero-content p {
+    font-size: 17px;
+    color: #e0e0e5;
+    margin: 0 0 14px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 24px;
+}
+
+.hero-actions a {
+    background: var(--ttu-red);
+    color: white;
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hero-features {
+    color: #ebebf0;
+    font-size: 15px;
+    font-weight: 600;
+    max-width: 450px;
+}
+
+/* Categories */
+
+.categories {
+    margin-top: 36px;
+}
+
+.categories h2 {
+    font-size: 24px;
+    margin: 0 0 18px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.category-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 86px;
+    padding: 16px;
+    background: var(--light);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    text-decoration: none;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.category-icon {
+    font-size: 24px;
+}
+
+/* Responsive layout */
+
+@media (max-width: 1100px) {
+    header nav {
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 28px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
