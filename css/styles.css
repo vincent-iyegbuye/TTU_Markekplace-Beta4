@@ -652,6 +652,46 @@ select:focus-visible {
     background: #a30910;
 }
 
+/* Messages Responsive Layout */
+
+@media (max-width: 900px) {
+    .messages-page .message-composer {
+        flex-wrap: wrap;
+    }
+
+    .messages-page .message-composer input {
+        flex-basis: 100%;
+    }
+
+    .messages-page .message-bubble.received {
+        margin-left: 0;
+    }
+
+    .messages-page .message-bubble.sent {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .messages-page {
+        grid-template-columns: 1fr;
+    }
+
+    .messages-page .conversation-sidebar {
+        max-height: 330px;
+        overflow-y: auto;
+    }
+
+    .messages-page .chat-panel {
+        min-height: 550px;
+        padding: 24px 16px;
+    }
+
+    .messages-page .message-bubble {
+        max-width: 85%;
+    }
+}
+
 
 
 
