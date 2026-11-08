@@ -901,8 +901,199 @@ select:focus-visible {
     .manager-actions button {
         width: 100%;
     }
-    
+
 }
+
+/* ==========================================
+   LISTING PUBLISHED PAGE - VINCENT
+========================================== */
+
+/* Main Layout */
+
+.listing-published-page {
+    min-height: 820px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 96px 20px 80px;
+    background: white;
+}
+
+/* Confirmation Card */
+
+.listing-published-page .published-card {
+    width: 100%;
+    max-width: 760px;
+    min-height: 520px;
+    padding: 54px 70px 56px;
+
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Success Icon */
+
+.listing-published-page .published-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+
+    background: #1f9e4f;
+    color: white;
+
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+/* Confirmation Heading */
+
+.listing-published-page h1 {
+    margin: 24px 0 8px;
+
+    color: var(--text);
+    font-size: 34px;
+    font-weight: 700;
+}
+
+/* Confirmation Description */
+
+.listing-published-page .published-description {
+    margin: 0;
+
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Published Item Summary */
+
+.listing-published-page .published-item {
+    width: 100%;
+    min-height: 110px;
+
+    margin-top: 34px;
+    padding: 24px 20px;
+
+    background: var(--light);
+    border-radius: 14px;
+
+    text-align: left;
+}
+
+.listing-published-page .published-item h2 {
+    margin: 0 0 8px;
+
+    color: var(--text);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.listing-published-page .published-item p {
+    margin: 0;
+
+    color: var(--muted);
+    font-size: 16px;
+}
+
+/* Action Buttons */
+
+.listing-published-page .published-actions {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    width: 100%;
+    margin-top: 40px;
+}
+
+.listing-published-page .published-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 180px;
+    min-height: 44px;
+    padding: 12px 18px;
+
+    border-radius: 9px;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: background 0.2s ease;
+}
+
+/* View Listing Button */
+
+.listing-published-page .published-view {
+    background: var(--ttu-red);
+    color: white;
+}
+
+.listing-published-page .published-view:hover {
+    background: #a30910;
+}
+
+/* Manage Listing Button */
+
+.listing-published-page .published-manage {
+    background: white;
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+.listing-published-page .published-manage:hover {
+    background: var(--light);
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    .listing-published-page {
+        min-height: 650px;
+        padding: 40px 16px;
+    }
+
+    .listing-published-page .published-card {
+        min-height: auto;
+        padding: 36px 20px;
+    }
+
+    .listing-published-page .published-icon {
+        width: 76px;
+        height: 76px;
+        font-size: 42px;
+    }
+
+    .listing-published-page h1 {
+        font-size: 28px;
+    }
+
+    .listing-published-page .published-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .listing-published-page .published-actions a {
+        width: 100%;
+    }
+}
+
 
 
 
