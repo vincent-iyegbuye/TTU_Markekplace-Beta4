@@ -693,6 +693,218 @@ select:focus-visible {
 }
 
 
+/* ==========================================
+   MANAGE LISTING PAGE - VINCENT
+========================================== */
+
+.manage-listing-page {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 44px 7% 64px;
+    min-height: 760px;
+}
+
+/* Page Heading */
+
+.manage-listing-page h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+
+/* Listing Manager Card */
+
+.listing-manager {
+    display: grid;
+    grid-template-columns: 360px minmax(0, 1fr);
+    gap: 40px;
+
+    min-height: 620px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 30px;
+}
+
+/* Product Image */
+
+.manager-image {
+    width: 100%;
+    height: 300px;
+    background: var(--light);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.manager-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Product Details */
+
+.manager-details {
+    min-width: 0;
+    padding-top: 10px;
+}
+
+.manager-details h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+/* Listing Status */
+
+.listing-status {
+    display: inline-block;
+    color: #1f9e4f;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Price */
+
+.manager-price {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+/* Listing Statistics */
+
+.manager-stats {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Action Buttons */
+
+.manager-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 48px;
+}
+
+.manager-actions a,
+.manager-actions button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 44px;
+    min-width: 150px;
+    padding: 12px 18px;
+
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Edit Listing */
+
+.manager-edit {
+    background: white;
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+/* Mark as Sold */
+
+.manager-sold {
+    background: var(--ttu-red);
+    color: white;
+    border: 1px solid var(--ttu-red);
+}
+
+/* Delete Listing */
+
+.manager-delete {
+    background: white;
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+/* Button Hover States */
+
+.manager-edit:hover,
+.manager-delete:hover {
+    background: var(--light);
+}
+
+.manager-sold:hover {
+    background: #a30910;
+}
+
+/* Listing Reminder */
+
+.manager-note {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 36px;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 900px) {
+    .listing-manager {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        gap: 24px;
+    }
+
+    .manager-image {
+        max-width: 420px;
+    }
+
+    .manager-actions {
+        margin-top: 32px;
+    }
+}
+
+@media (max-width: 600px) {
+    .manage-listing-page {
+        padding: 28px 16px;
+    }
+
+    .manage-listing-page h1 {
+        font-size: 28px;
+    }
+
+    .listing-manager {
+        padding: 18px;
+    }
+
+    .manager-image {
+        height: 240px;
+    }
+
+    .manager-details h2 {
+        font-size: 24px;
+    }
+
+    .manager-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .manager-actions a,
+    .manager-actions button {
+        width: 100%;
+    }
+}
+
+
+
 
 
 /* ==========================================
