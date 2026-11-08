@@ -517,6 +517,143 @@ select:focus-visible {
 }
 
 
+/* Chat Panel */
+
+.messages-page .chat-panel {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 800px;
+    padding: 30px 34px;
+    background: white;
+}
+
+/* Chat Header */
+
+.messages-page .chat-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.messages-page .verified-label {
+    color: #266bdb;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Item Summary */
+
+.messages-page .chat-item-summary {
+    background: var(--light);
+    border-radius: 10px;
+    padding: 22px 18px;
+    margin-top: 24px;
+}
+
+.messages-page .chat-item-summary a {
+    color: var(--text);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Message History */
+
+.messages-page .message-history {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 32px;
+}
+
+/* Message Bubbles */
+
+.messages-page .message-bubble {
+    max-width: 360px;
+    width: fit-content;
+    min-width: 160px;
+    padding: 18px 16px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Received Messages */
+
+.messages-page .message-bubble.received {
+    background: var(--light);
+    color: #26262b;
+    align-self: flex-start;
+    margin-left: 46px;
+}
+
+/* Sent Messages */
+
+.messages-page .message-bubble.sent {
+    background: #3685df;
+    color: white;
+    align-self: flex-end;
+    margin-right: 46px;
+}
+
+/* Message Composer */
+
+.messages-page .message-composer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: auto;
+    padding-top: 32px;
+}
+
+.messages-page .message-composer input {
+    flex: 1;
+    min-width: 0;
+    height: 46px;
+    padding: 12px 14px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    font-size: 14px;
+}
+
+/* Send Button */
+
+.messages-page .send-btn {
+    background: var(--ttu-red);
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 14px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Campus Pickup Button */
+
+.messages-page .pickup-btn {
+    background: var(--ttu-red);
+    color: white;
+    text-decoration: none;
+    border-radius: 9px;
+    padding: 14px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Button Hover Effects */
+
+.messages-page .send-btn:hover,
+.messages-page .pickup-btn:hover {
+    background: #a30910;
+}
+
+
+
 
 /* ==========================================
    8. AUTHENTICATION - HUSSEIN
