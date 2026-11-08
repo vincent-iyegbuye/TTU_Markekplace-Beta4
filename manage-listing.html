@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Vincent - Manage Listing Page -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Listing | TTU Marketplace</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Shared Navigation -->
+    <header>
+        <nav class="site-nav" aria-label="Main navigation">
+
+            <!-- Website Logo -->
+            <a href="index.html">TTU Marketplace</a>
+
+            <!-- Search Bar -->
+            <input type="search" name="search" placeholder="Search marketplace..."
+                aria-label="Search marketplace listings">
+
+            <!-- Navigation Links -->
+            <a href="index.html" aria-current="page">
+                Marketplace
+            </a>
+
+            <a href="saved.html">Saved</a>
+
+            <a href="messages.html">Messages</a>
+
+            <a href="profile.html">Profile</a>
+
+            <!-- Sell Item -->
+            <a href="create-listing.html">Sell Item</a>
+
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="manage-listing-page">
+
+        <h1>Manage Listing</h1>
+
+        <!-- Listing Management Card -->
+        <section class="listing-manager" aria-label="Manage MacBook Air M2 listing">
+
+            <!-- Product Image -->
+            <div class="manager-image">
+                <img src="images/macbook.png" alt="MacBook Air M2 laptop">
+            </div>
+
+            <!-- Product Information -->
+            <div class="manager-details">
+
+                <h2>MacBook Air M2</h2>
+
+                <!-- Listing Status -->
+                <span class="listing-status">
+                    ACTIVE
+                </span>
+
+                <!-- Product Price -->
+                <p class="manager-price">$650</p>
+
+                <!-- Listing Statistics -->
+                <p class="manager-stats">
+                    42 views &bull;
+                    5 saves &bull;
+                    3 messages
+                </p>
+
+                <!-- Listing Actions -->
+                <div class="manager-actions">
+
+                    <!-- Edit Listing -->
+                    <a href="create-listing.html" class="manager-edit">
+                        Edit Listing
+                    </a>
+
+                    <!-- Mark as Sold -->
+                    <button type="button" class="manager-sold">
+                        Mark as Sold
+                    </button>
+
+                    <!-- Delete Listing -->
+                    <button type="button" class="manager-delete">
+                        Delete Listing
+                    </button>
+
+                </div>
+
+                <!-- Helpful Reminder -->
+                <p class="manager-note">
+                    Keep condition and availability
+                    accurate so buyers can trust
+                    the listing.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="site-footer">
+
+        <div class="footer-content">
+
+            <p>&copy; 2026 TTU Marketplace.</p>
+
+            <p>
+                A student-developed marketplace project
+                for the Texas Tech community.
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
