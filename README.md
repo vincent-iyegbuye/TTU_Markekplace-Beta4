@@ -133,7 +133,7 @@ Each member will:
 | Vincent | Home and Messages (confirm exact Milestone 1 scope) | `[member branch]` |
 | Hussein | `[Confirm assigned Figma screen(s)]` | `[member branch]` |
 | Jayden | `[Confirm assigned Figma screen(s)]` | `[member branch]` |
-| Robert | `[Confirm assigned Figma screen(s)]` | `[member branch]` |
+| Robert | Profile Page / Saved Items | `[member branch]` |
 | Franklin | Campus pickup / confirmation flow  | `[member branch]` |
 | Matthew | `[Confirm assigned Figma screen(s)]` | `[member branch]` |
 
