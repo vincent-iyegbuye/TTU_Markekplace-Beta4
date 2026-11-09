@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>My Profile · TTU Marketplace</title>
-    <meta property="og:title" content="My Profile · TTU Marketplace" />
+    <title>TTU Marketplace</title>
+    <meta property="og:title" content="TTU Marketplace" />
     <meta property="og:type" content="website" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,15 +19,9 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Top navigation -->
     <header class="navbar">
-      <a class="brand" href="#">
-        <img
-          src="./images/logo-cart.png"
-          alt=""
-          width="44"
-          height="44"
-        />
+      <a class="brand" href="index.html">
+        <img src="./images/logo-cart.png" alt="" width="44" height="44" />
         <span>TTU Marketplace</span>
       </a>
 
@@ -37,190 +31,44 @@
       </form>
 
       <nav class="nav-links" aria-label="Main">
-        <a href="#">Marketplace</a>
-        <a href="saved-items.html">Saved</a>
+        <a href="index.html" aria-current="page">Marketplace</a>
+        <a href="saved.html">Saved</a>
         <a href="#">Messages</a>
-        <a href="index.html" aria-current="page">Profile</a>
+        <a href="profile.html">Profile</a>
       </nav>
 
       <a class="btn btn-primary" href="#">+ Sell Item</a>
     </header>
 
-    <div class="layout">
-      <!-- Account sidebar -->
-      <aside class="sidebar">
-        <h2 class="sidebar-title">Account</h2>
-        <nav aria-label="Account">
-          <a href="index.html" aria-current="page">My Profile</a>
-          <a href="saved-items.html">Saved Items</a>
-          <a href="#">Reviews</a>
-          <a href="#">Settings</a>
-        </nav>
-      </aside>
+    <main id="main" tabindex="-1">
+      <section aria-labelledby="welcome-heading">
+        <h1 id="welcome-heading" class="profile-name">Welcome to TTU Marketplace</h1>
+        <p>Buy and sell items with the Texas Tech student community.</p>
+      </section>
 
-      <main id="main" tabindex="-1">
-        <!-- Profile card -->
-        <section class="profile-card" aria-label="Profile">
-          <div class="avatar" aria-hidden="true">PP</div>
-
-          <div class="profile-info">
-            <h1 class="profile-name">Pete Peterson</h1>
-
-            <ul class="profile-meta">
-              <li class="verified">
-                <img src="./images/frame1094-llse.svg" alt="" width="20" height="20" />
-                Verified TTU Student
-              </li>
-              <li>
-                <img src="./images/star11094-nv98.svg" alt="" width="20" height="20" />
-                <strong>4.9</strong>&nbsp;(27 reviews)
-              </li>
-              <li class="meetup">
-                <img src="./images/locationicon1095-pucn.svg" alt="" width="20" height="20" />
-                Usual meetup: Student Union Building · Member since Aug 2024
-              </li>
-            </ul>
-
-            <div class="profile-actions">
-              <a class="btn btn-primary" href="#">Edit Profile</a>
-              <a class="btn btn-outline" href="#">Settings</a>
+      <section aria-labelledby="pages-heading">
+        <h2 id="pages-heading" class="section-title">Explore</h2>
+        <ul class="listings">
+          <li class="card">
+            <div class="card-body">
+              <h3 class="card-title">My Profile</h3>
+              <p>View your profile and manage your active listings.</p>
             </div>
-          </div>
-
-          <dl class="stats">
-            <div class="stat">
-              <dt>Active Listings</dt>
-              <dd id="active-count">3</dd>
+            <div class="card-actions">
+              <a class="btn btn-small btn-primary" href="profile.html">View Profile</a>
             </div>
-            <div class="stat">
-              <dt>Items Sold</dt>
-              <dd id="sold-count">18</dd>
+          </li>
+          <li class="card">
+            <div class="card-body">
+              <h3 class="card-title">Saved Items</h3>
+              <p>Return to the marketplace items you have favorited.</p>
             </div>
-          </dl>
-        </section>
-
-        <!-- Listings -->
-        <section aria-labelledby="listings-heading">
-          <h2 id="listings-heading" class="section-title">My Listings</h2>
-
-          <ul class="listings">
-            <li class="card" data-status="active">
-              <div class="card-image">
-                <span class="card-fallback" aria-hidden="true">MB</span>
-                <img src="./images/macbook-air.png" alt="MacBook Air M2" loading="lazy" />
-                <span class="status-badge">Active</span>
-              </div>
-              <div class="card-body">
-                <div class="card-head">
-                  <h3 class="card-title">MacBook Air M2</h3>
-                  <span class="condition condition-good">Good</span>
-                </div>
-                <p class="price">$650</p>
-                <p class="card-meta">14 saves · 3 messages</p>
-              </div>
-              <div class="card-actions">
-                <a class="btn btn-small btn-outline" href="#">Edit</a>
-                <button type="button" class="btn btn-small btn-outline js-mark-sold">Mark as Sold</button>
-              </div>
-            </li>
-
-            <li class="card" data-status="active">
-              <div class="card-image">
-                <span class="card-fallback" aria-hidden="true">CT</span>
-                <img src="./images/calculus-textbook.png" alt="Calculus textbook" loading="lazy" />
-                <span class="status-badge">Active</span>
-              </div>
-              <div class="card-body">
-                <div class="card-head">
-                  <h3 class="card-title">Calculus Textbook</h3>
-                  <span class="condition condition-like-new">Like New</span>
-                </div>
-                <p class="price">$35</p>
-                <p class="card-meta">9 saves · 2 messages</p>
-              </div>
-              <div class="card-actions">
-                <a class="btn btn-small btn-outline" href="#">Edit</a>
-                <button type="button" class="btn btn-small btn-outline js-mark-sold">Mark as Sold</button>
-              </div>
-            </li>
-
-            <li class="card" data-status="active">
-              <div class="card-image">
-                <span class="card-fallback" aria-hidden="true">DC</span>
-                <img src="./images/chair.png" alt="Desk chair" loading="lazy" />
-                <span class="status-badge">Active</span>
-              </div>
-              <div class="card-body">
-                <div class="card-head">
-                  <h3 class="card-title">Desk Chair</h3>
-                  <span class="condition condition-good">Good</span>
-                </div>
-                <p class="price">$45</p>
-                <p class="card-meta">6 saves · 1 message</p>
-              </div>
-              <div class="card-actions">
-                <a class="btn btn-small btn-outline" href="#">Edit</a>
-                <button type="button" class="btn btn-small btn-outline js-mark-sold">Mark as Sold</button>
-              </div>
-            </li>
-
-            <li class="card is-sold" data-status="sold">
-              <div class="card-image">
-                <span class="card-fallback" aria-hidden="true">MF</span>
-                <img src="./images/fridge.png" alt="Mini fridge" loading="lazy" />
-                <span class="status-badge">Sold</span>
-              </div>
-              <div class="card-body">
-                <div class="card-head">
-                  <h3 class="card-title">Mini Fridge</h3>
-                  <span class="condition condition-fair">Fair</span>
-                </div>
-                <p class="price">$90</p>
-                <p class="card-meta">Sold Sep 28</p>
-              </div>
-              <div class="card-actions">
-                <a class="btn btn-small btn-outline" href="#">View</a>
-              </div>
-            </li>
-
-            <li class="card card-create">
-              <a href="#" class="create-link">
-                <span class="create-plus" aria-hidden="true">+</span>
-                Create Listing
-              </a>
-            </li>
-          </ul>
-        </section>
-      </main>
-    </div>
-
-    <script>
-      // "Mark as Sold": flip the card to sold and update the counters.
-      document.querySelectorAll('.js-mark-sold').forEach(function (button) {
-        button.addEventListener('click', function () {
-          var card = button.closest('.card');
-          card.classList.add('is-sold');
-          card.dataset.status = 'sold';
-          card.querySelector('.status-badge').textContent = 'Sold';
-          var d = new Date();
-          card.querySelector('.card-meta').textContent =
-            'Sold ' + d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-          button.remove();
-
-          var active = document.getElementById('active-count');
-          var sold = document.getElementById('sold-count');
-          active.textContent = Math.max(0, parseInt(active.textContent, 10) - 1);
-          sold.textContent = parseInt(sold.textContent, 10) + 1;
-        });
-      });
-
-      // If an image file is missing, hide the broken-image icon
-      // (product cards then show their initials instead).
-      document.querySelectorAll('img').forEach(function (img) {
-        function hide() { img.style.display = 'none'; }
-        if (img.complete && img.naturalWidth === 0) hide();
-        img.addEventListener('error', hide);
-      });
-    </script>
+            <div class="card-actions">
+              <a class="btn btn-small btn-primary" href="saved.html">View Saved Items</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
