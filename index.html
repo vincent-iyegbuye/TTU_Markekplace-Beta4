@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- Vincent - Home / Marketplace Page -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTU Marketplace</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <header>
+
+
+        <nav class="site-nav" aria-label="Main navigation">
+
+            <!-- Website logo -->
+            <a href="index.html">TTU Marketplace</a>
+
+            <!-- Search bar -->
+            <input type="search" name="search" placeholder="Search textbooks, furniture, electronics..."
+                aria-label="Search marketplace listings">
+
+            <!-- Navigation links -->
+            <a href="index.html" aria-current="page">Marketplace</a>
+            <a href="saved.html">Saved</a>
+            <a href="messages.html">Messages</a>
+            <a href="profile.html">Profile</a>
+
+            <!-- Sell item button -->
+            <a href="create-listing.html">Sell Item</a>
+        </nav>
+
+    </header>
+
+
+    <main class="home-page">
+
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Buy. Sell. Trade. All on Campus.</h1>
+
+                <p>
+                    A safer and easier marketplace built for
+                    Texas Tech students.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="browse.html">Browse Listings</a>
+                    <a href="browse-map.html">Browse by Map</a>
+                </div>
+            </div>
+
+            <p class="hero-features">
+                Verified TTU students &bull;
+                Campus pickup &bull;
+                Clear item condition
+            </p>
+        </section>
+
+        <!-- Marketplace Categories -->
+        <section class="categories">
+            <h2>Browse by category</h2>
+
+            <div class="category-grid">
+                <a href="browse.html" class="category-card">
+                    <span class="category-icon" aria-hidden="true">📚</span>
+                    <span>Books</span>
+                </a>
+
+                <a href="browse.html" class="category-card">
+                    <span class="category-icon" aria-hidden="true">💻</span>
+                    <span>Electronics</span>
+                </a>
+
+                <a href="browse.html" class="category-card">
+                    <span class="category-icon" aria-hidden="true">🪑</span>
+                    <span>Furniture</span>
+                </a>
+
+                <a href="browse.html" class="category-card">
+                    <span class="category-icon" aria-hidden="true">👕</span>
+                    <span>Clothing</span>
+                </a>
+
+                <a href="browse.html" class="category-card">
+                    <span class="category-icon" aria-hidden="true">✏️</span>
+                    <span>School Supplies</span>
+                </a>
+
+                <a href="browse.html" class="category-card">
+                    <span class="category-icon" aria-hidden="true">🏠</span>
+                    <span>Dorm &amp; Living</span>
+                </a>
+
+                <a href="browse.html" class="category-card">
+                    <span class="category-icon" aria-hidden="true">📦</span>
+                    <span>Other</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Featured Listings -->
+        <section class="featured-listings">
+            <div class="featured-header">
+                <h2>Featured listings</h2>
+
+                <div class="listing-filters">
+                    <select aria-label="Filter by price">
+                        <option value="">Price</option>
+                    </select>
+
+                    <select aria-label="Filter by condition">
+                        <option value="">Condition</option>
+                    </select>
+
+                    <select aria-label="Filter by category">
+                        <option value="">Category</option>
+                    </select>
+
+                    <select aria-label="Sort listings">
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid">
+
+                <article class="product-card">
+
+                    <div class="product-image">
+                        <img src="images/macbook.png" alt="MacBook Air M2 laptop">
+                    </div>
+
+                    <div class="product-info">
+                        <button type="button" class="favorite-btn" aria-label="Save MacBook Air M2 to favorites">
+                            ♡
+                        </button>
+                        <h3>
+                            <a href="listing-details.html">
+                                MacBook Air M2
+                            </a>
+                        </h3>
+                        <p class="product-price">$650</p>
+                        <span class="condition good">Good</span>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/textbook.png" alt="Calculus Textbook">
+                    </div>
+                    <div class="product-info">
+                        <button type="button" class="favorite-btn" aria-label="Save Calculus Textbook to favorites">
+                            ♡
+                        </button>
+                        <h3>
+                            <a href="listing-details.html">
+                                Calculus Textbook
+                            </a>
+                        </h3>
+                        <p class="product-price">$35</p>
+                        <span class="condition like-new">Like New</span>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/chair.png" alt="Desk Chair">
+                    </div>
+                    <div class="product-info">
+                        <button type="button" class="favorite-btn" aria-label="Save Desk Chair to favorites">
+                            ♡
+                        </button>
+                        <h3>
+                            <a href="listing-details.html">
+                                Desk Chair
+                            </a>
+                        </h3>
+                        <p class="product-price">$45</p>
+                        <span class="condition good">Good</span>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/fridge.png" alt="Mini Fridge">
+                    </div>
+                    <div class="product-info">
+                        <button type="button" class="favorite-btn" aria-label="Save Mini Fridge to favorites">
+                            ♡
+                        </button>
+                        <h3>
+                            <a href="listing-details.html">
+                                Mini Fridge
+                            </a>
+                        </h3>
+                        <p class="product-price">$90</p>
+                        <span class="condition fair">Fair</span>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="images/hoodie.png" alt="TTU Hoodie">
+                    </div>
+                    <div class="product-info">
+                        <button type="button" class="favorite-btn" aria-label="Save TTU Hoodie to favorites">
+                            ♡
+                        </button>
+                        <h3>
+                            <a href="listing-details.html">
+                                TTU Hoodie
+                            </a>
+                        </h3>
+                        <p class="product-price">$30</p>
+                        <span class="condition like-new">Like New</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 TTU Marketplace.</p>
+
+            <p>
+                A student-developed marketplace project
+                for the Texas Tech community.
+            </p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,174 +1,257 @@
+
 # TTU Marketplace
 
-**Buy, sell, and connect within the Texas Tech student community.**
+**Course:** ENGR 1340 - Introduction to Engineering  
+**Project:** Project 2 - HTML & CSS Website Development  
+**University:** Texas Tech University  
+**Team:** Beta4  
+**Milestone 1 Deadline:** November 9, 2026
 
-**Course:** ENGR 1340 — Introduction to Engineering (Fall 2026)  
-**Assignment:** Project 2 — Build Your Own Web App  
-**Milestone:** 1 — Project Proposal, Repository Setup & Website Progress  
-**Deadline:** November 9, 2026, 11:59 PM  
-**Team name:** `Beta 4`  
-**Figma prototype:** `will do that soon`  
-**Live site (optional):** `incoming`
+## 1. Project Overview
 
-## About the Project
+TTU Marketplace is a student-to-student online marketplace designed specifically for the Texas Tech University community.
 
-TTU Marketplace is a student-focused web application for buying and selling secondhand items within the Texas Tech University community. It brings textbooks, electronics, furniture, clothing, school supplies, and other student essentials into a marketplace designed around campus life.
+The platform allows students to discover, buy, and sell secondhand items such as textbooks, electronics, furniture, clothing, and school supplies.
 
-Students currently use broad social platforms, group chats, and word of mouth to advertise items, which can make listings hard to find and exchanges difficult to coordinate. Student interviews also identified price disagreements, last-minute cancellations, and buyers who do not show up as problems. TTU Marketplace aims to make browsing, communication, and pickup planning more organized for TTU students.
+The goal is to provide a convenient and student-focused platform where users can communicate with sellers, explore affordable products, and arrange campus pickups.
 
-**Project 2 goal:** Translate our team's Project 1 Figma designs into a multi-page website using semantic HTML5 and external CSS, while practicing accessibility, responsive design, Git/GitHub collaboration, and pull-request workflows.
+## 2. Project Proposal - Table 1
 
-## Milestone 1 — Project Proposal (Table 1)
-
-| Required field | Team proposal |
+| Field | Description |
 |---|---|
-| **App Name** | TTU Marketplace |
-| **App Type** | Student-to-student campus marketplace (web app) |
-| **Problem It Solves** | TTU students often depend on scattered group chats, social media, and word of mouth to find or sell used items. These channels can make it difficult to compare listings, communicate reliably, and coordinate exchanges. TTU Marketplace is designed to give TTU students a more organized place to browse items, contact sellers, and plan campus pickups. |
-| **Page 1 — Home (`index.html`)** | Landing page that introduces TTU Marketplace, showcases categories and featured items, and helps students navigate to browsing, selling, or messaging. |
-| **Page 2 — Browse Listings (`browse.html`)** | Content grid of item cards showing a title, photo, price, category, condition, and availability tag, with visible search, filter, and sort controls. |
-| **Page 3 — Add Listing (`add-listing.html`)** | Data-entry page containing a labeled form for an item title, price, category, condition, description, and pickup details, with submit and cancel controls. |
-| **Page 4 — Product Details (`product-details.html`)** | Detail page showing one listing's photos, item description, price, condition, category, seller information, and pickup preference, with Back, Edit, and Archive/Delete controls. |
-| **Page 5 — Messages (`messages.html`)** | Buyer-seller messaging interface with a conversation list, message thread, reply field, and links to related item information. |
-| **Page 6 — Profile (`profile.html`)** | Student profile view with account information, active and sold listings, and shortcuts to listing management. |
-| **Key Interactive Feature 1** | **Browse and filter:** Product cards have a **View Details** link; a search field and category/condition/sort controls allow students to locate relevant listings (controls may initially be visual). |
-| **Key Interactive Feature 2** | **Open listing details:** Clicking **View Details** on a product card navigates to `product-details.html`, which shows additional information and a link back to the grid. |
-| **Key Interactive Feature 3** | **Create a listing:** The `add-listing.html` form uses labeled text, number, select, and textarea fields, visible focus styling, required-field validation, and Submit/Cancel controls. |
-| **Key Interactive Feature 4** | **Contact a seller:** The **Message Seller** control navigates to `messages.html`, where a conversation and message composition UI are displayed. |
-| **Key Interactive Feature 5** | **Save or manage an item:** A clearly labeled favorite/save control appears on listing cards; profile and detail pages include visible item-management actions. Persistent saving is a future enhancement unless implemented. |
+| App Name | TTU Marketplace |
+| App Type | Student-to-Student Online Marketplace (E-commerce Web Application) |
+| Problem It Solves | Texas Tech students often face difficulties finding affordable secondhand items and connecting with reliable buyers and sellers within the university community. TTU Marketplace provides a centralized platform where students can discover and sell items, communicate with other students, and arrange convenient campus pickups. |
+| Page 1 - Home / Marketplace | The main landing page where students can search for items, browse categories, view featured listings, and navigate to other sections of the website. |
+| Page 2 - Listing Details | Displays information about an item, including its image, price, condition, description, seller information, and available purchase-related actions. |
+| Page 3 - Create Listing | Provides a form where students can enter an item's name, description, price, category, condition, and images to create a marketplace listing. |
+| Page 4 - Messages | Provides a conversation interface where buyers and sellers can discuss products, ask questions, and coordinate campus pickups. |
+| Page 5 - My Profile | Displays a student's profile information, active listings, selling history, and options for managing marketplace activities. |
+| Page 6 - Manage Listing | Allows sellers to view listing information and engagement statistics and access options to edit, mark as sold, or delete an item. |
 
+### Five Key Interactive Features
 
-## Figma-to-Website Implementation
+**Feature 1 - Search and Filtering**
 
-Our HTML and CSS implementation will follow our Project 1 Figma prototype as closely as possible, including:
+A search bar allows students to enter keywords to find marketplace items. Category, price, and condition controls allow students to narrow down the displayed listings.
 
-- **Layout and components:** Navigation, headers, product cards, forms, message panels, buttons, footers, spacing, and page structure.
-- **Visual design:** Colors, fonts, typography hierarchy, images, icons, and other design elements.
-- **Complete screen coverage:** All Figma-designed pages will have their own `.html` files, including any additional authentication, campus pickup, confirmation, settings, or request screens that appear in the finalized prototype.
-- **Usability:** Working links between pages, active navigation states, labeled controls, and visible hover/focus states.
-- **Responsiveness:** CSS layouts that adapt to desktop, tablet, and smaller mobile screens.
+**Feature 2 - Product Cards and Details**
 
-### Page-to-File Mapping
+Product cards display an item image, name, price, category, and condition. Hovering over a card highlights it, while clicking the item title opens its detailed listing page.
 
-| Figma screen / page | Planned HTML file | Status |
+**Feature 3 - Create Listing**
+
+A Sell Item button opens a form where students can enter an item title, description, price, category, condition, and product images. The interface includes form fields and submission controls.
+
+**Feature 4 - Student Messaging**
+
+A Message Seller option opens the messaging interface, where students can view conversations, type messages, and select an option to arrange a campus pickup.
+
+**Feature 5 - Listing Management**
+
+The Manage Listing page displays a seller's item information and provides Edit Listing, Mark as Sold, and Delete Listing controls for managing the item.
+
+These features describe the intended application behavior. During Milestone 1, certain interactive elements are visual-only and do not require backend functionality.
+
+## 3. Figma Design
+
+Our team originally developed the TTU Marketplace interface in Figma as part of Project 1.
+
+Project 2 focuses on converting those designs into HTML5 and CSS while maintaining the original layouts, colors, typography, and visual consistency.
+
+**Figma Prototype:**
+
+https://www.figma.com/design/SULHIYdyHpElod5jiIvorg/TTU-Marketplace-%E2%80%93-Team-Wireframe?node-id=81-2
+
+The final Figma prototype contains 16 screens distributed among six team members.
+
+## 4. Website Pages and Team Responsibilities
+
+| Team Member | Assigned Pages | HTML Files |
 |---|---|---|
-| Home | `index.html` | In development |
-| Browse Listings | `browse.html` | In development |
-| Add Listing | `add-listing.html` | In development |
-| Product Details | `product-details.html` | In development |
-| Messages | `messages.html` | In development |
-| Profile | `profile.html` | In development |
-| **Additional Figma screens** | **Add one HTML filename per screen here** | Audit Project 1 Figma prototype |
+| Vincent | Home / Marketplace, Messages, Manage Listing, Listing Published | index.html, messages.html, manage-listing.html, listing-published.html |
+| Hussein | Sign In, Create Account | sign-in.html, create-account.html |
+| Jayden | Listing Details, Seller Profile | listing-details.html, seller-profile.html |
+| Robert | My Profile, Saved Items | profile.html, saved.html |
+| Franklin | Browse Map, Campus Pickup, Meetup Confirmation | browse-map.html, campus-pickup.html, meetup-confirmation.html |
+| Matthew | Create Listing, Reviews, Settings | create-listing.html, reviews.html, settings.html |
 
-*This table describes planned work, not a claim that these files already exist. Update statuses as the team pushes files to GitHub.*
+Each team member is responsible for implementing their assigned Figma screens using semantic HTML and external CSS.
 
-## Technology and Standards
+All pages should share consistent navigation, design elements, and accessibility features.
 
-- **HTML5:** Separate `.html` files for each page, semantic landmarks (`header`, `nav`, `main`, `section`, and `footer`), and properly labeled forms.
-- **CSS3:** All styles maintained in `css/styles.css`; common styling, design tokens, active navigation, button states, responsive grids, and media queries.
-- **Accessibility:** Appropriate image `alt` text; keyboard-operable links and controls; visible focus indicators; meaningful labels; sufficient color contrast; and ARIA labels where native HTML does not already provide the necessary accessible name.
-- **Git/GitHub:** One public team repository, individual member branches, descriptive commits, and pull requests for review and merging.
-- **GitHub Pages:** Optional static-site deployment.
-- **JavaScript:** Optional progressive enhancement for interactions 
-
-
-## Repository Structure
+## 5. Project File Structure
 
 ```text
-ttu-marketplace-beta4/
-├── index.html
-├── browse.html
-├── add-listing.html
-├── product-details.html
-├── messages.html
-├── profile.html
-├── others.html      # Add each additional Figma screen
-├── css/
-│   └── styles.css              # Shared external stylesheet for all pages
-├── images/                     # Images, logos, and icons
-└── README.md
+TTU_Markekplace-Beta4/
+|
+|-- index.html
+|-- messages.html
+|-- manage-listing.html
+|-- listing-published.html
+|
+|-- sign-in.html
+|-- create-account.html
+|
+|-- listing-details.html
+|-- seller-profile.html
+|
+|-- profile.html
+|-- saved.html
+|
+|-- browse-map.html
+|-- campus-pickup.html
+|-- meetup-confirmation.html
+|
+|-- create-listing.html
+|-- reviews.html
+|-- settings.html
+|
+|-- css/
+|   |-- styles.css
+|
+|-- images/
+|   |-- macbook.png
+|   |-- textbook.png
+|   |-- chair.png
+|   |-- fridge.png
+|   |-- hoodie.png
+|   |-- additional-assets/
+|
+|-- README.md
 ```
 
-Each contributor will include an HTML comment naming the page author at the top of their own assigned HTML file. Every proposed page will be linked through the site navigation.
+The file structure represents the planned organization of the complete website. Each page is implemented in its own HTML file.
 
-## Required Page Components
+## 6. Technologies Used
 
-**Across every page**
-- Consistent navigation bar with an active-page state.
-- Consistent footer.
-- Semantic HTML page structure.
-- Shared external CSS file (`css/styles.css`).
-- Functional navigation links, accessible labels, and responsive styling.
+### HTML5
 
-**Browse / content-grid page (`browse.html`)**
-- A list/grid of item cards with item title, category, and status/availability tag.
-- At least one button or link per card (such as **View Details**).
-- At least one filter or sort control; visual-only functionality is acceptable at this milestone.
+Used to create the structure and content of the website, including navigation bars, forms, product cards, messaging interfaces, and page sections.
 
-**Add Listing / data-entry page (`add-listing.html`)**
-- A real HTML `<form>` with labeled inputs of multiple types and a Submit button.
-- A Cancel or Back link to the listing page.
-- CSS `:focus` / `:focus-visible` styling for fields.
-- Forms do not need to persist information for Milestone 1.
+### CSS3
 
-**Product Details page (`product-details.html`)**
-- Listing fields and at least one visual element (photo or category/status badge).
-- Edit, Delete/Archive, and Back controls. Delete/Archive may be visual-only for now.
+Used to style the website, including colors, typography, spacing, buttons, responsive grids, and layouts.
 
-## Team Collaboration
+All styling is maintained in the shared `css/styles.css` file.
 
-Our group will work in **one public GitHub repository** named using the required format: `ttu-marketplace-beta4` (lowercase and hyphens, no spaces). Every teammate will be invited as a collaborator.
+### Git and GitHub
 
-Each member will:
-1. Create or use a separate branch named after themselves.
-2. Make regular, meaningful commits with descriptive messages.
-3. Push their assigned HTML page(s) and any shared CSS updates.
-4. Open a pull request for review before merging major changes to `main`.
-5. Provide a screenshot and a 150–200-word progress report describing the code they personally wrote.
+Used for version control, collaboration, branching, commits, and pull requests.
 
-### Contributors and Responsibilities
+### Figma
 
-| Team member | Page(s) / responsibility | Branch |
-|---|---|---|
-| Vincent | Home and Messages (confirm exact Milestone 1 scope) | `[member branch]` |
-| Hussein | `[Confirm assigned Figma screen(s)]` | `[member branch]` |
-| Jayden | `[Confirm assigned Figma screen(s)]` | `[member branch]` |
-| Robert | `[Confirm assigned Figma screen(s)]` | `[member branch]` |
-| Franklin | Campus pickup / confirmation flow  | `[member branch]` |
-| Matthew | `[Confirm assigned Figma screen(s)]` | `[member branch]` |
+Used to design the original interface and guide the HTML/CSS implementation.
 
+## 7. Design and Accessibility Standards
 
-## Viewing the Website Locally
+The website follows these development practices:
 
-1. Clone or download the repository.
-2. Open `index.html` in a browser.
-3. Navigate to the other pages using the shared header links.
+- Semantic HTML5 elements, including header, nav, main, section, and footer.
+- Consistent navigation and footer across pages.
+- External CSS styling.
+- Descriptive alt text for product images.
+- Accessible labels for form inputs.
+- Keyboard focus indicators.
+- Responsive layouts using CSS media queries.
+- Consistent colors, spacing, and typography.
+- Page-specific CSS classes to minimize styling conflicts.
 
-No backend or special installation is required for the initial static implementation.
+### Design Colors
 
-## Milestone 1 Progress Checklist
+| Color | Hex Value |
+|---|---|
+| TTU Red | #CC0D14 |
+| Dark Background | #1F1F24 |
+| Main Text | #121214 |
+| Muted Text | #737880 |
+| Light Background | #F5F5F7 |
+| Borders | #E0E3E8 |
 
-- [ ] Finalize the proposal and page list to match **every page in Project 1 Figma**.
-- [ ] Create the correctly named, public GitHub repository with `README.md`.
-- [ ] Invite all contributors and establish individual branches.
-- [ ] Commit each assigned `.html` page and put all CSS in `css/styles.css`.
-- [ ] Implement the shared navigation bar, footer, and visual design.
-- [ ] Build the required content grid, form, and detail page structures.
-- [ ] Add semantic HTML, image alt text, accessible labels, and keyboard focus styles.
-- [ ] Add responsive CSS and verify on different screen sizes.
-- [ ] Check links between pages and compare each page to its Figma screen.
-- [ ] Make multiple commits and use pull requests to demonstrate contributions.
-- [ ] Add one current screenshot and a 150–200-word progress report for every team member.
-- [ ] Document **three actual team meetings** in the supplied progress/meeting-log template (the template asks for three; the separate requirements document mentions fewer).
-- [ ] Copy the proposal summary into the provided submission template and include the real GitHub URL.
-- [ ] Have **one team member** submit the combined document to Canvas by **November 9, 2026, 11:59 PM**.
+## 8. GitHub Collaboration
 
-## Current Scope and Future Work
+Our team uses GitHub to coordinate individual contributions.
 
-Milestone 1 prioritizes complete page coverage, recognizable Figma styling, accessible markup, responsive layout, and visible GitHub contributions. Controls such as filtering, favoriting, deleting, authentication, posting listings, and real-time messaging may initially be front-end demonstrations unless the team implements persistence and working logic.
+The development workflow includes:
 
-Potential future enhancements include verified TTU sign-in, saved listings, searchable inventory, real messaging, notification preferences, and a structured campus pickup/confirmation experience.
+1. Cloning the shared repository.
+2. Creating or switching to an individual development branch.
+3. Implementing assigned HTML pages.
+4. Adding CSS styling in the shared stylesheet.
+5. Making regular commits with descriptive messages.
+6. Pushing changes to GitHub.
+7. Reviewing and merging completed work through pull requests.
 
----
+Each team member includes an identifying HTML comment near the beginning of their assigned files.
 
-*TTU Marketplace — ENGR 1340, Texas Tech University, Fall 2026.*
+Example:
+
+```html
+<!-- Vincent - Home / Marketplace Page -->
+```
+
+### Example Commit Messages
+
+```bash
+git commit -m "Create homepage HTML structure"
+git commit -m "Add marketplace navigation and search"
+git commit -m "Build featured product cards"
+git commit -m "Style messaging interface"
+git commit -m "Implement manage listing page"
+git commit -m "Improve responsive page layouts"
+```
+
+## 9. Running the Website Locally
+
+To view the project locally:
+
+1. Clone or download the GitHub repository.
+2. Open the project folder in Visual Studio Code.
+3. Open `index.html` in a web browser or use the Live Server extension.
+4. Navigate between the available website pages using the navigation links.
+
+No backend installation or database setup is required for Milestone 1.
+
+## 10. Milestone 1 Development Scope
+
+Milestone 1 focuses on demonstrating implementation progress by converting the team's Figma screens into HTML and CSS.
+
+The required development work includes:
+
+- Creating the individual HTML pages.
+- Implementing the primary page layouts.
+- Applying external CSS styling.
+- Adding navigation between pages.
+- Using accessible HTML elements.
+- Demonstrating responsive design.
+- Committing and pushing development progress to GitHub.
+
+Some features, including authentication, live messaging, search filtering, and database-backed listing management, are planned for future development.
+
+The current milestone emphasizes frontend structure, styling, teamwork, and version control rather than a fully operational marketplace.
+
+## 11. Future Improvements
+
+Planned improvements include:
+
+- Working student authentication.
+- Functional product search and filtering.
+- Creating and storing marketplace listings.
+- Persistent favorites and saved items.
+- Real-time messaging between buyers and sellers.
+- Functional listing editing and deletion.
+- Listing status updates.
+- Improved mobile responsiveness.
+- Additional accessibility testing.
+- Backend and database integration.
+
+## 12. Repository
+
+**GitHub Repository:**
+
+https://github.com/vincent-iyegbuye/TTU_Markekplace-Beta4
+
+**Project:** TTU Marketplace  
+**Institution:** Texas Tech University  
+**Course:** ENGR 1340  
+**Academic Year:** 2026

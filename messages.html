@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- Vincent - Messages / Conversation Page -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages | TTU Marketplace</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Shared Navigation -->
+    <header>
+        <nav class="site-nav" aria-label="Main navigation">
+            <a href="index.html">TTU Marketplace</a>
+
+            <input type="search" placeholder="Search marketplace..." aria-label="Search marketplace">
+
+            <a href="index.html">Marketplace</a>
+            <a href="saved.html">Saved</a>
+            <a href="messages.html" aria-current="page">
+                Messages
+            </a>
+            <a href="profile.html">Profile</a>
+            <a href="create-listing.html">Sell Item</a>
+        </nav>
+    </header>
+
+    <main class="messages-page">
+
+        <!-- Conversation Sidebar -->
+        <aside class="conversation-sidebar">
+            <h1>Messages</h1>
+
+            <div class="conversation-list">
+
+                <a href="#chat" class="conversation-item active">
+                    <span class="avatar" aria-hidden="true">ST</span>
+                    <span class="conversation-info">
+                        <strong>Sarah Thompson</strong>
+                        <small>MacBook Air M2</small>
+                    </span>
+                </a>
+
+                <a href="#chat" class="conversation-item">
+                    <span class="avatar" aria-hidden="true">DK</span>
+                    <span class="conversation-info">
+                        <strong>David Kim</strong>
+                        <small>Marketplace message</small>
+                    </span>
+                </a>
+
+                <a href="#chat" class="conversation-item">
+                    <span class="avatar" aria-hidden="true">AR</span>
+                    <span class="conversation-info">
+                        <strong>Alex Rivera</strong>
+                        <small>Marketplace message</small>
+                    </span>
+                </a>
+
+                <a href="#chat" class="conversation-item">
+                    <span class="avatar" aria-hidden="true">EC</span>
+                    <span class="conversation-info">
+                        <strong>Emily Chen</strong>
+                        <small>Marketplace message</small>
+                    </span>
+                </a>
+
+            </div>
+        </aside>
+
+        <!-- Chat Panel -->
+        <section class="chat-panel" id="chat" aria-label="Conversation with Sarah Thompson">
+
+            <div class="chat-header">
+                <h2>Sarah Thompson</h2>
+                <p class="verified-label">
+                    &#10003; Verified TTU Student
+                </p>
+            </div>
+
+            <div class="chat-item-summary">
+                <a href="listing-details.html">
+                    MacBook Air M2 &bull; $650
+                </a>
+            </div>
+
+            <!-- Message History -->
+            <div class="message-history">
+
+                <p class="message-bubble received">
+                    Hi! Is this still available?
+                </p>
+
+                <p class="message-bubble sent">
+                    Yes, it is!
+                </p>
+
+                <p class="message-bubble received">
+                    Can I inspect it before buying?
+                </p>
+
+                <p class="message-bubble sent">
+                    Of course. We can meet on campus.
+                </p>
+
+            </div>
+
+            <!-- Message Input -->
+            <div class="message-composer">
+                <input type="text" placeholder="Type a message..." aria-label="Type a message">
+
+                <button type="button" class="send-btn">
+                    Send
+                </button>
+
+                <a href="campus-pickup.html" class="pickup-btn">
+                    Arrange Campus Pickup
+                </a>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 TTU Marketplace.</p>
+            <p>
+                A student-developed marketplace project
+                for the Texas Tech community.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
