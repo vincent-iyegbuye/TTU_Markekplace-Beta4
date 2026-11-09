@@ -1,0 +1,151 @@
+/* Design tokens and base styles, matched to the TTU Marketplace wireframe. */
+:root {
+  --color-primary: #cc0c14;        /* TTU red, used for buttons and active states */
+  --color-primary-dark: #a30a10;
+  --color-on-primary: #ffffff;
+  --color-text: #121214;
+  --color-text-muted: #5b606b;
+  --color-text-subtle: #72777f;
+  --color-bg: #f4f4f7;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f5f5f7;
+  --color-sidebar: #e0e3e8;
+  --color-border: #e0e3e8;
+  --color-success: #1f9e4f;
+  --color-success-text: #176b38;
+  --color-success-bg: #e3f4ea;
+
+  --radius-sm: 6px;
+  --radius-md: 9px;
+  --radius-lg: 15px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 1px 2px rgba(18, 18, 20, 0.06), 0 2px 8px rgba(18, 18, 20, 0.06);
+
+  --font-sans: "Inter", Arial, "Helvetica Neue", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+h1, h2, h3, p, ul, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+main:focus {
+  outline: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: -100px;
+  left: 8px;
+  z-index: 1000;
+  padding: 10px 16px;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-weight: 600;
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  padding: 0 20px;
+  border: 1.5px solid transparent;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+}
+
+.btn-outline {
+  background: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.btn-outline:hover {
+  border-color: #b9bdc6;
+  background: var(--color-surface-muted);
+}
+
+.btn-small {
+  min-height: 36px;
+  padding: 0 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
