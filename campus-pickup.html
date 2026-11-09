@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Arrange Campus Pickup | TTU Marketplace</title>
+<link rel="stylesheet" href="globals.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="campus-pickup">
+<header class="browser-chrome" aria-label="Browser window">
+<span class="ellipse" aria-hidden="true"></span>
+<span class="div" aria-hidden="true"></span>
+<span class="ellipse-2" aria-hidden="true"></span>
+<span class="text-wrapper">TTU Marketplace</span>
+</header>
+<nav class="navbar" aria-label="Primary navigation">
+<a href="/" aria-label="TTU Marketplace home">
+<img class="logo-cart-icon" src="Picturesformilestone1/cart-icon.png" alt="TTU Marketplace">
+</a>
+<a class="text-wrapper-2" href="/">TTU Marketplace</a>
+<form class="search" role="search" action="/" method="get">
+<label class="search-label" for="marketplace-search">search marketplace
+</label>
+<input
+          class="search-marketplace"
+          id="marketplace-search"
+          name="q"
+          placeholder="Search marketplace..."
+          type="search"
+        >
+</form>
+<a class="text-wrapper-3" href="/" aria-current="page">Marketplace</a>
+<a class="text-wrapper-4" href="/saved">Saved</a>
+<a class="text-wrapper-5" href="/messages">Messages</a>
+<a class="text-wrapper-6" href="/profile">Profile</a>
+<a class="button-sell-item" href="/sell">
+<span class="text-wrapper-7">+ Sell Item</span>
+</a>
+</nav>
+<main>
+<h1 class="text-wrapper-8">Arrange Campus Pickup</h1>
+<p class="p">Choose a public campus location, date, and time.</p>
+<form class="pickup-form" action="/pickup-request" method="post">
+<label class="text-wrapper-9" for="pickup-location">Location</label>
+<select class="div-wrapper" id="pickup-location" name="location">
+<option value="student-union-building">Student Union Building (SUB) ▼</option>
+</select>
+<label class="text-wrapper-11" for="pickup-date">Date</label>
+<select class="div-wrapper" id="pickup-date" name="date">
+<option value="2026-10-09">Oct 9, 2026 ▼</option>
+</select>
+<label class="text-wrapper-13" for="pickup-time">Time</label>
+<select class="div-wrapper" id="pickup-time" name="time">
+<option value="15:00">3:00 PM ▼</option>
+</select>
+<label class="text-wrapper-15" for="pickup-note">Additional note</label>
+<textarea
+          class="input-i-ll-meet-you"
+          id="pickup-note"
+          name="note"
+          rows="1"
+        >I'll meet you near the main entrance.</textarea>
+<p class="text-wrapper-16" id="pickup-tip">Tip: choose a busy, well-lit campus location.</p>
+<button class="button-send-meetup" type="submit">
+<span class="text-wrapper-17">Send Meetup Request</span>
+</button>
+</form>
+<aside class="campus-location" aria-label="Selected campus location">
+<h2 class="text-wrapper-18">Student Union Building</h2>
+<p class="text-wrapper-19">Central campus • public location</p>
+</aside>
+</main>
+</div>
+</body>
+</html>
