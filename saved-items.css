@@ -1,0 +1,153 @@
+/* Saved Items page. Shared navbar, sidebar and card styles come from index.css. */
+
+/* ---------- Page header ---------- */
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  font-weight: 700;
+  color: #8e8e93;
+}
+
+.breadcrumb li + li::before {
+  content: "/";
+  margin-right: 6px;
+}
+
+.breadcrumb a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.breadcrumb [aria-current="page"] {
+  color: var(--color-text-muted);
+}
+
+.page-title {
+  margin-top: 8px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #000;
+}
+
+.page-subtitle {
+  margin-top: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #8e8e93;
+}
+
+.saved-listings {
+  margin-top: 28px;
+}
+
+/* ---------- Placeholder image tiles (no product photos in this design yet) ---------- */
+.tile-gray  { background: #ebecf1; }
+.tile-peach { background: rgba(237, 199, 161, 0.37); }
+
+/* The calculator photo is only 48×48px, so show it small and centered
+   instead of stretching it blurry across the whole tile. */
+.card-image img.img-small {
+  inset: auto;
+  position: relative;
+  grid-area: 1 / 1;          /* sits on top of the initials, which show only if it fails */
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.card-image .card-fallback {
+  grid-area: 1 / 1;
+}
+
+/* ---------- Heart / unsave button ---------- */
+.heart-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-surface);
+  box-shadow: 0 1px 4px rgba(18, 18, 20, 0.15);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.heart-btn svg {
+  fill: var(--color-primary);
+}
+
+.heart-btn:hover {
+  transform: scale(1.08);
+}
+
+/* ---------- Seller + meetup lines ---------- */
+.seller-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--color-text);
+}
+
+.seller-meta li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.seller-meta img {
+  flex-shrink: 0;
+}
+
+.saved-card .card-actions .btn {
+  width: 100%;
+}
+
+/* ---------- Empty state + browse button ---------- */
+.empty-state {
+  margin-top: 28px;
+  padding: 48px 24px;
+  border: 2px dashed var(--color-border);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.empty-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.empty-text {
+  margin-top: 6px;
+  color: var(--color-text-muted);
+}
+
+.empty-btn {
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .page-title {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saved Items · TTU Marketplace</title>
+    <meta property="og:title" content="Saved Items · TTU Marketplace" />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./saved-items.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Top navigation (same as the profile page) -->
+    <header class="navbar">
+      <a class="brand" href="#">
+        <img
+          src="./images/logo-cart.png"
+          alt=""
+          width="44"
+          height="44"
+        />
+        <span>TTU Marketplace</span>
+      </a>
+
+      <form class="search" role="search" action="#">
+        <label class="visually-hidden" for="search">Search marketplace</label>
+        <input id="search" type="search" placeholder="Search marketplace..." />
+      </form>
+
+      <nav class="nav-links" aria-label="Main">
+        <a href="#">Marketplace</a>
+        <a href="saved-items.html" aria-current="page">Saved</a>
+        <a href="#">Messages</a>
+        <a href="index.html">Profile</a>
+      </nav>
+
+      <a class="btn btn-primary" href="#">+ Sell Item</a>
+    </header>
+
+    <div class="layout">
+      <!-- Account sidebar -->
+      <aside class="sidebar">
+        <h2 class="sidebar-title">Account</h2>
+        <nav aria-label="Account">
+          <a href="index.html">My Profile</a>
+          <a href="saved-items.html" aria-current="page">Saved Items</a>
+          <a href="#">Reviews</a>
+          <a href="#">Settings</a>
+        </nav>
+      </aside>
+
+      <main id="main" tabindex="-1">
+        <!-- Page header -->
+        <div class="page-header">
+          <div class="page-header-text">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol>
+              <li><a href="#">Marketplace</a></li>
+              <li aria-current="page">Saved Items</li>
+            </ol>
+          </nav>
+          <h1 class="page-title">Saved Items</h1>
+          <p class="page-subtitle" id="saved-count" aria-live="polite">4 items you’ve favorited</p>
+          </div>
+          <a class="btn btn-outline" href="#">Browse Marketplace</a>
+        </div>
+
+        <ul class="listings saved-listings" id="saved-list">
+          <li class="card saved-card">
+            <div class="card-image tile-gray">
+              <span class="card-fallback" aria-hidden="true">TH</span>
+              <img src="./images/ttu-hoodie.png" alt="Red TTU hoodie" loading="lazy" />
+              <button type="button" class="heart-btn js-unsave" aria-pressed="true" aria-label="Remove TTU Hoodie from saved items">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.2 0 3.6 1.2 4.2 2.3h2c.6-1.1 2-2.3 4.2-2.3 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z"/></svg>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3 class="card-title">TTU Hoodie</h3>
+                <span class="condition condition-like-new">Like New</span>
+              </div>
+              <p class="price">$30</p>
+              <ul class="seller-meta">
+                <li class="seller">
+                  <img src="./images/frame1094-llse.svg" alt="" width="16" height="16" />
+                  Sarah T. · Verified TTU
+                </li>
+                <li>
+                  <img src="./images/locationicon1095-pucn.svg" alt="" width="16" height="16" />
+                  Student Union
+                </li>
+              </ul>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-small btn-primary" href="#">View Listing</a>
+            </div>
+          </li>
+
+          <li class="card saved-card">
+            <div class="card-image tile-peach">
+              <span class="card-fallback" aria-hidden="true">GC</span>
+              <img class="img-small" src="./images/graphing-calculator.png" alt="Red graphing calculator" loading="lazy" />
+              <button type="button" class="heart-btn js-unsave" aria-pressed="true" aria-label="Remove Graphing Calculator from saved items">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.2 0 3.6 1.2 4.2 2.3h2c.6-1.1 2-2.3 4.2-2.3 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z"/></svg>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3 class="card-title">Graphing Calculator</h3>
+                <span class="condition condition-good">Good</span>
+              </div>
+              <p class="price">$60</p>
+              <ul class="seller-meta">
+                <li class="seller">
+                  <img src="./images/frame1094-llse.svg" alt="" width="16" height="16" />
+                  Priya S. · Verified TTU
+                </li>
+                <li>
+                  <img src="./images/locationicon1095-pucn.svg" alt="" width="16" height="16" />
+                  Library Entrance
+                </li>
+              </ul>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-small btn-primary" href="#">View Listing</a>
+            </div>
+          </li>
+
+          <li class="card saved-card">
+            <div class="card-image tile-gray">
+              <span class="card-fallback" aria-hidden="true">DL</span>
+              <img class="img-small" src="./images/desklamp.png" alt="Black desk lamp" loading="lazy" />
+              <button type="button" class="heart-btn js-unsave" aria-pressed="true" aria-label="Remove Desk Lamp from saved items">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.2 0 3.6 1.2 4.2 2.3h2c.6-1.1 2-2.3 4.2-2.3 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z"/></svg>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3 class="card-title">Desk Lamp</h3>
+                <span class="condition condition-good">Good</span>
+              </div>
+              <p class="price">$18</p>
+              <ul class="seller-meta">
+                <li class="seller">
+                  <img src="./images/frame1094-llse.svg" alt="" width="16" height="16" />
+                  Tyler B. · Verified TTU
+                </li>
+                <li>
+                  <img src="./images/locationicon1095-pucn.svg" alt="" width="16" height="16" />
+                  Rec Center
+                </li>
+              </ul>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-small btn-primary" href="#">View Listing</a>
+            </div>
+          </li>
+
+          <li class="card saved-card">
+            <div class="card-image tile-peach">
+              <span class="card-fallback" aria-hidden="true">BS</span>
+              <button type="button" class="heart-btn js-unsave" aria-pressed="true" aria-label="Remove Bookshelf from saved items">
+                <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.2 0 3.6 1.2 4.2 2.3h2c.6-1.1 2-2.3 4.2-2.3 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z"/></svg>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="card-head">
+                <h3 class="card-title">Bookshelf</h3>
+                <span class="condition condition-good">Good</span>
+              </div>
+              <p class="price">$40</p>
+              <ul class="seller-meta">
+                <li class="seller">
+                  <img src="./images/frame1094-llse.svg" alt="" width="16" height="16" />
+                  Hannah W. · Verified TTU
+                </li>
+                <li>
+                  <img src="./images/locationicon1095-pucn.svg" alt="" width="16" height="16" />
+                  Student Union
+                </li>
+              </ul>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-small btn-primary" href="#">View Listing</a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Shown only when every item has been removed -->
+        <div class="empty-state" id="empty-state" hidden>
+          <p class="empty-title">No saved items yet</p>
+          <p class="empty-text">Tap the heart on any listing to save it here.</p>
+          <a class="btn btn-primary empty-btn" href="#">Browse Marketplace</a>
+        </div>
+
+      </main>
+    </div>
+
+    <script>
+      // Heart button: remove the item from Saved and update the count.
+      var list = document.getElementById('saved-list');
+      var countEl = document.getElementById('saved-count');
+      var emptyEl = document.getElementById('empty-state');
+
+      function updateCount() {
+        var n = list.querySelectorAll('.saved-card').length;
+        countEl.textContent = n === 1 ? '1 item you’ve favorited' : n + ' items you’ve favorited';
+        emptyEl.hidden = n !== 0;
+        list.hidden = n === 0;
+      }
+
+      list.addEventListener('click', function (e) {
+        var btn = e.target.closest('.js-unsave');
+        if (!btn) return;
+        btn.closest('.saved-card').remove();
+        updateCount();
+      });
+
+      // Hide any image that fails to load instead of showing a broken-image icon.
+      document.querySelectorAll('img').forEach(function (img) {
+        function hide() { img.style.display = 'none'; }
+        if (img.complete && img.naturalWidth === 0) hide();
+        img.addEventListener('error', hide);
+      });
+    </script>
+  </body>
+</html>
