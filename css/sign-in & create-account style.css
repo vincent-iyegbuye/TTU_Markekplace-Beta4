@@ -1,0 +1,472 @@
+.sign-in-container1.sign-in-container1 {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sign-in-thq-sign-in-elm.sign-in-thq-sign-in-elm {
+  width: 100%;
+  height: 1024px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+  background-color: rgba(224, 227, 232, 1);
+}
+ 
+.sign-in-thq-header-elm.sign-in-thq-header-elm {
+  top: 0px;
+  left: 0px;
+  width: 1440px;
+  height: 120px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: #ffffff;
+}
+ 
+.sign-in-thq-text-elm11.sign-in-thq-text-elm11 {
+  top: 40px;
+  left: 148px;
+  color: rgba(17, 17, 20, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter, Inter Fallback;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.sign-in-thq-image1-elm.sign-in-thq-image1-elm {
+  top: 16px;
+  left: 0px;
+  width: 148px;
+  height: 87px;
+  position: absolute;
+  border-radius: 82px;
+}
+ 
+.sign-in-thq-sign-in-block-elm.sign-in-thq-sign-in-block-elm {
+  top: 224px;
+  left: 391px;
+  width: 676px;
+  height: 749px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(245, 245, 247, 1);
+}
+ 
+.sign-in-thq-text-elm12.sign-in-thq-text-elm12 {
+  top: 659px;
+  left: 352px;
+  color: rgba(204, 12, 20, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter, Inter Fallback;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.sign-in-thq-text-elm13.sign-in-thq-text-elm13 {
+  top: 440px;
+  left: 511px;
+  color: rgba(204, 12, 20, 1);
+  height: auto;
+  position: absolute;
+  font-size: 14px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter, Inter Fallback;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.sign-in-thq-text-elm14.sign-in-thq-text-elm14 {
+  top: 658px;
+  left: 131px;
+  color: rgba(114, 119, 127, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter, Inter Fallback;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.sign-in-thq-text-elm15.sign-in-thq-text-elm15 {
+  top: 599px;
+  left: 329px;
+  color: rgba(114, 119, 127, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter, Inter Fallback;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.sign-in-thq-text-elm16.sign-in-thq-text-elm16 {
+  top: 363px;
+  left: 56px;
+  color: rgba(17, 17, 20, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter, Inter Fallback;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.sign-in-thq-text-elm17.sign-in-thq-text-elm17 {
+  top: 213px;
+  left: 56px;
+  color: rgba(17, 17, 20, 1);
+  height: auto;
+  position: absolute;
+  font-size: 20px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter, Inter Fallback;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.sign-in-thq-button-primary-elm.sign-in-thq-button-primary-elm {
+  gap: 8px;
+  top: 495px;
+  left: 56px;
+  width: 563px;
+  height: 48px;
+  display: flex;
+  padding: 12px 20px;
+  position: absolute;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  justify-content: center;
+  background-color: rgba(204, 12, 20, 1);
+}
+ 
+.sign-in-thq-text-elm18.sign-in-thq-text-elm18 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 15px;
+  font-style: Semi Bold;
+  text-align: left;
+  font-family: Inter, Inter Fallback;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.sign-in-thq-input-default-elm1.sign-in-thq-input-default-elm1 {
+  top: 387px;
+  left: 56px;
+  color: rgba(114, 119, 127, 1);
+  width: 564px;
+  height: 48px;
+  display: flex;
+  position: absolute;
+  font-size: 14px;
+  text-align: left;
+  align-items: flex-start;
+  flex-shrink: 0;
+  font-family: Inter, Inter Fallback;
+  font-weight: 400;
+  border-color: rgba(224, 226, 232, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+}
+ 
+.sign-in-thq-input-default-elm2.sign-in-thq-input-default-elm2 {
+  top: 247px;
+  left: 56px;
+  color: rgba(114, 119, 127, 1);
+  width: 564px;
+  height: 48px;
+  display: flex;
+  position: absolute;
+  font-size: 14px;
+  text-align: left;
+  align-items: flex-start;
+  flex-shrink: 0;
+  font-family: Inter, Inter Fallback;
+  font-weight: 400;
+  border-color: rgba(224, 226, 232, 1);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 1);
+}
+ 
+.sign-in-thq-text-elm19.sign-in-thq-text-elm19 {
+  top: 136px;
+  left: 183px;
+  color: rgba(114, 119, 127, 1);
+  height: auto;
+  position: absolute;
+  font-size: 16px;
+  font-style: Regular;
+  text-align: left;
+  font-family: Inter, Inter Fallback;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.sign-in-thq-text-elm20.sign-in-thq-text-elm20 {
+  top: 85px;
+  left: 222px;
+  color: rgba(17, 17, 20, 1);
+  height: auto;
+  position: absolute;
+  font-size: 32px;
+  font-style: Bold;
+  text-align: left;
+  font-family: Inter, Inter Fallback;
+  font-weight: 700;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+ 
+.sign-in-thq-line1-elm1.sign-in-thq-line1-elm1 {
+  top: 610px;
+  left: 359px;
+  width: 261px;
+  height: 1px;
+  position: absolute;
+  background-color: rgba(224, 226, 232, 1);
+}
+ 
+.sign-in-thq-line1-elm2.sign-in-thq-line1-elm2 {
+  top: 611px;
+  left: 55px;
+  width: 256px;
+  height: 1px;
+  position: absolute;
+  background-color: rgba(224, 226, 232, 1);
+}
+ 
+.sign-in-thq-image2-elm.sign-in-thq-image2-elm {
+  top: 617px;
+  left: 962px;
+  width: 48px;
+  height: 36px;
+  position: absolute;
+}
+ 
+.createan-account-container1 {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.createan-account-thq-createan-account-elm {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(224, 227, 232, 1);
+}
+
+.createan-account-thq-header-elm {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  flex-shrink: 0;
+  align-items: center;
+  padding: 16px max(24px, calc((100% - 1144px) / 2));
+  gap: 16px;
+  background-color: #ffffff;
+}
+
+.createan-account-thq-image1-elm {
+  width: 148px;
+  height: 87px;
+  object-fit: contain;
+}
+
+.createan-account-thq-text-elm11 {
+  color: rgba(17, 17, 20, 1);
+  font-family: Inter, Inter Fallback, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.createan-account-thq-sign-in-block-elm {
+  display: flex;
+  width: min(676px, calc(100% - 32px));
+  flex-direction: column;
+  gap: 24px;
+  margin: 56px auto 48px;
+  padding: 32px 56px;
+  border-radius: 12px;
+  background-color: rgba(245, 245, 247, 1);
+}
+
+.createan-account-thq-headertext-elm,
+.createan-account-thq-formfields-elm,
+.createan-account-thq-fieldfullname-elm,
+.createan-account-thq-fieldemail-elm,
+.createan-account-thq-fieldpassword-elm,
+.createan-account-thq-fieldconfirmpassword-elm,
+.createan-account-thq-actions-elm {
+  display: flex;
+  flex-direction: column;
+}
+
+.createan-account-thq-headertext-elm,
+.createan-account-thq-formfields-elm {
+  gap: 16px;
+}
+
+.createan-account-thq-fieldfullname-elm,
+.createan-account-thq-fieldemail-elm,
+.createan-account-thq-fieldpassword-elm,
+.createan-account-thq-fieldconfirmpassword-elm {
+  position: relative;
+  gap: 8px;
+}
+
+.createan-account-thq-text-elm12 {
+  color: rgba(17, 17, 20, 1);
+  font: 700 32px/1.2 Inter, Inter Fallback, sans-serif;
+}
+
+.createan-account-thq-text-elm13,
+.createan-account-thq-text-elm16 {
+  color: rgba(114, 119, 127, 1);
+  font: 400 16px/1.5 Inter, Inter Fallback, sans-serif;
+}
+
+.createan-account-thq-text-elm14,
+.createan-account-thq-text-elm15,
+.createan-account-thq-text-elm17,
+.createan-account-thq-text-elm18 {
+  color: rgba(17, 17, 20, 1);
+  font: 600 16px/1.4 Inter, Inter Fallback, sans-serif;
+}
+
+.createan-account-thq-input-default-elm1,
+.createan-account-thq-input-default-elm2,
+.createan-account-thq-input-default-elm3,
+.createan-account-thq-input-default-elm4 {
+  width: 100%;
+  height: 48px;
+  padding: 0 44px 0 14px;
+  border: 1px solid rgba(224, 226, 232, 1);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: rgba(17, 17, 20, 1);
+  font: 400 14px Inter, Inter Fallback, sans-serif;
+}
+
+.createan-account-thq-image2-elm,
+.createan-account-thq-image3-elm {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.createan-account-thq-actions-elm {
+  gap: 16px;
+}
+
+.createan-account-thq-button-primary-elm {
+  display: flex;
+  width: 100%;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: rgba(204, 12, 20, 1);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.createan-account-thq-text-elm19 {
+  color: #ffffff;
+  font: 700 15px Inter, Inter Fallback, sans-serif;
+}
+
+.createan-account-thq-footer-elm {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  font: 400 14px/1.5 Inter, Inter Fallback, sans-serif;
+}
+
+.createan-account-thq-text-elm20 {
+  color: rgba(114, 119, 127, 1);
+}
+
+.createan-account-thq-text-elm21 {
+  color: rgba(204, 12, 20, 1);
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .createan-account-thq-header-elm {
+    height: 96px;
+    padding: 12px 16px;
+  }
+
+  .createan-account-thq-image1-elm {
+    width: 112px;
+    height: 68px;
+  }
+
+  .createan-account-thq-text-elm11 {
+    font-size: 24px;
+  }
+
+  .createan-account-thq-sign-in-block-elm {
+    gap: 20px;
+    margin-top: 24px;
+    padding: 24px;
+  }
+
+  .createan-account-thq-text-elm12 {
+    font-size: 26px;
+  }
+
+}
